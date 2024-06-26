@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header.jumbotron {
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
