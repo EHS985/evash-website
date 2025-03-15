@@ -1,83 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVASH Ultra EEPROM</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>EVASH EEPROM - 益华世科技存储解决方案</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: '微软雅黑', sans-serif; line-height: 1.8; }
+        .header { background: #003366; padding: 1rem; color: white; }
+        .section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 1.5rem; }
+        .card { border: 1px solid #eee; padding: 1.5rem; border-radius: 8px; }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">EVASH</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#intro">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#products">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="jumbotron text-center">
-        <h1 class="display-4">Welcome to EVASH</h1>
-        <p class="lead">High-Performance, High-Reliability Storage Solutions</p>
+    <header class="header">
+        <img src="evash-logo.png" alt="EVASH LOGO" style="height:50px">
+        <h1 style="display:inline-block; margin-left:1rem">EVASH EEPROM</h1>
     </header>
 
-    <section id="intro" class="container my-5">
-        <h2>About EVASH</h2>
-        <p>EVASH is dedicated to providing high-performance, high-reliability storage solutions. Our Ultra EEPROM series excels in low power consumption, high speed, and high reliability, making them ideal for various embedded applications and edge computing devices.</p>
+    <!-- 公司介绍 -->
+    <section class="section">
+        <h2>品牌介绍</h2>
+        <p>EVASH EEPROM是益华世科技（深圳）有限公司旗下专业存储芯片品牌，致力于提供工业级/消费级EEPROM解决方案。产品覆盖2Kb-512Kb容量，采用先进UDFN封装工艺，具备100万次擦写寿命和20年数据保持能力:cite[1]:cite[2]。</p>
     </section>
 
-    <section id="products" class="container my-5">
-        <h2>Products</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <img src="img/2kbit.jpg" class="card-img-top" alt="2kBit EEPROM">
-                    <div class="card-body">
-                        <h5 class="card-title">EVASH Ultra EEPROM 2kBit</h5>
-                        <p class="card-text">High reliability, low power consumption 2kBit EEPROM storage solution.</p>
-                    </div>
-                </div>
+    <!-- 产品矩阵 -->
+    <section class="section" style="background:#f5f5f5">
+        <h2>产品系列</h2>
+        <div class="product-grid">
+            <div class="card">
+                <h3>EV24C02A</h3>
+                <p>容量：2Kb<br>接口：I2C<br>电压：1.7-5.5V</p>
             </div>
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <img src="img/512kbit.jpg" class="card-img-top" alt="512kBit EEPROM">
-                    <div class="card-body">
-                        <h5 class="card-title">EVASH Ultra EEPROM 512kBit</h5>
-                        <p class="card-text">Fast read/write, high-performance 512kBit EEPROM storage solution.</p>
-                    </div>
-                </div>
+            <div class="card">
+                <h3>EV24C04A</h3>
+                <p>容量：4Kb<br>封装：UDFN-8<br>温度：-40~125℃</p>
+            </div>
+            <!-- 重复结构添加EV24C08A/16A/32A/64A/128A/256A/512A -->
+        </div>
+        <p style="margin-top:1rem">
+            规格书下载：
+            <a href="https://pan.baidu.com/s/1IVMXhjZZSH4MUZM6pl_40w?pwd=rn3v">百度云链接</a><br>
+            购买渠道：
+            <a href="https://shop260382949.taobao.com">官方淘宝店</a>
+        </p>
+    </section>
+
+    <!-- 应用场景 -->
+    <section class="section">
+        <h2>典型应用</h2>
+        <div class="product-grid">
+            <div class="card">
+                <h4>工业自动化</h4>
+                <p>存储设备配置参数和操作日志，支持-40℃极端环境运行:cite[1]</p>
+            </div>
+            <div class="card">
+                <h4>汽车电子</h4>
+                <p>通过AEC-Q100认证，适用于车载信息娱乐系统和BMS管理:cite[2]</p>
+            </div>
+            <div class="card">
+                <h4>智能家居</h4>
+                <p>低功耗设计，支持智能设备用户数据存储:cite[7]</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="container my-5">
-        <h2>Contact & Purchase</h2>
-        <p>Visit our official website: <a href="https://www.evash.top">www.evash.top</a></p>
-        <p>Purchase Links:</p>
+    <!-- 合作厂商 -->
+    <section class="section" style="background:#f5f5f5">
+        <h2>产业合作</h2>
+        <div class="product-grid">
+            <div class="card">
+                <h4>晶圆制造</h4>
+                <p>华虹半导体提供先进CMOS工艺晶圆，良品率＞99.8%:cite[1]</p>
+            </div>
+            <div class="card">
+                <h4>封装测试</h4>
+                <p>通富微电完成UDFN封装及可靠性测试，通过AEC-Q100认证</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心优势 -->
+    <section class="section">
+        <h2>产品优势</h2>
         <ul>
-            <li><a href="https://search.ickey.cn/?keyword=EVASH&bom_ab=null">Yunhan IC Mall</a></li>
-            <li><a href="https://www.taobao.com/evash">Taobao Store</a></li>
+            <li>全系兼容BR24G/AT24C系列，支持Pin to Pin替换:cite[1]</li>
+            <li>工业级宽温域支持（-40℃~125℃）:cite[2]</li>
+            <li>20年数据保持能力，100万次擦写寿命:cite[5]</li>
+            <li>可选AES/ChaCha20数据加密方案:cite[1]</li>
         </ul>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 EVASH. All rights reserved.</p>
+    <!-- 联系方式 -->
+    <footer class="section" style="background:#003366; color:white">
+        <h3>全球服务网络</h3>
+        <div class="product-grid">
+            <div class="card" style="background:#1a4d80">
+                <h4>中国总部</h4>
+                <p>深圳市南山区科技园A3栋501<br>
+                联系人：Eric Zeng<br>
+                ✉️ eric.zeng@evash.top<br>
+                📱 +86 185 7668 9961<br>
+                💬 微信 EHS981</p>
+            </div>
+            <div class="card" style="background:#1a4d80">
+                <h4>美国办事处</h4>
+                <p>23 Davis St, Woburn, MA 01801<br>
+                联系人：张成<br>
+                💬 微信 EHS985</p>
+            </div>
+            <div class="card" style="background:#1a4d80">
+                <h4>长沙中心</h4>
+                <p>雨花区朝辉路245上河国际B区2402<br>
+                联系人：刘经理<br>
+                📱 +86 189 3243 7954<br>
+                💬 微信 EHS986</p>
+            </div>
+        </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
