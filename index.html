@@ -1,124 +1,128 @@
+<!-- 中文版 index.html -->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVASH EEPROM - 益华世科技存储解决方案</title>
+    <title>EVASH EEPROM | 工业级存储解决方案</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: '微软雅黑', sans-serif; line-height: 1.8; }
-        .header { background: #003366; padding: 1rem; color: white; }
-        .section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 1.5rem; }
-        .card { border: 1px solid #eee; padding: 1.5rem; border-radius: 8px; }
+        :root {
+            --tech-blue: #0066cc;
+            --tech-dark: #1a2b3c;
+            --tech-light: #f8f9fa;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: '微软雅黑', sans-serif;
+            padding-top: 70px;
+            background: var(--tech-light);
+        }
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+        }
+        .module {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            padding: 25px;
+            max-width: 1200px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <header class="header">
-        <img src="evash-logo.png" alt="EVASH LOGO" style="height:50px">
-        <h1 style="display:inline-block; margin-left:1rem">EVASH EEPROM</h1>
+    <!-- 固定导航栏 -->
+    <header class="fixed-header">
+        <img src="logo.png" alt="EVASH" style="height:40px">
+        <div style="margin-left: auto">
+            <a href="en.html" style="color: var(--tech-blue); margin-left: 20px; text-decoration: none">EN</a>
+        </div>
     </header>
 
-    <!-- 公司介绍 -->
-    <section class="section">
-        <h2>品牌介绍</h2>
-        <p>EVASH EEPROM是益华世科技（深圳）有限公司旗下专业存储芯片品牌，致力于提供工业级/消费级EEPROM解决方案。产品覆盖2Kb-512Kb容量，采用先进UDFN封装工艺，具备100万次擦写寿命和20年数据保持能力:cite[1]:cite[2]。</p>
-    </section>
+    <!-- 品牌介绍 -->
+    <div class="module">
+        <h1 style="color: var(--tech-dark); margin-bottom: 15px">EVASH EEPROM</h1>
+        <p>EVASH EEPROM是益华世科技（深圳）有限公司旗下专业存储芯片品牌，专注工业级EEPROM研发生产，产品通过AEC-Q100认证，工作温度-40℃~125℃，擦写寿命超100万次。</p>
+    </div>
 
-    <!-- 产品矩阵 -->
-    <section class="section" style="background:#f5f5f5">
-        <h2>产品系列</h2>
+    <!-- 产品系列 -->
+    <div class="module">
+        <h2 style="color: var(--tech-dark); border-left: 4px solid var(--tech-blue); padding-left: 10px">产品矩阵</h2>
         <div class="product-grid">
-            <div class="card">
+            <div style="padding:15px;border:1px solid #eee;border-radius:6px">
                 <h3>EV24C02A</h3>
-                <p>容量：2Kb<br>接口：I2C<br>电压：1.7-5.5V</p>
+                <ul style="margin:10px 0;list-style:none">
+                    <li>容量：2Kb (256x8)</li>
+                    <li>接口：I2C</li>
+                    <li>电压：1.8-5.5V</li>
+                    <li>封装：SOP-8</li>
+                </ul>
             </div>
-            <div class="card">
+            <div style="padding:15px;border:1px solid #eee;border-radius:6px">
                 <h3>EV24C04A</h3>
-                <p>容量：4Kb<br>封装：UDFN-8<br>温度：-40~125℃</p>
+                <ul style="margin:10px 0;list-style:none">
+                    <li>容量：4Kb (512x8)</li>
+                    <li>温度：-40~125℃</li>
+                    <li>寿命：100万次</li>
+                    <li>封装：TSSOP-8</li>
+                </ul>
             </div>
-            <!-- 重复结构添加EV24C08A/16A/32A/64A/128A/256A/512A -->
-        </div>
-        <p style="margin-top:1rem">
-            规格书下载：
-            <a href="https://pan.baidu.com/s/1IVMXhjZZSH4MUZM6pl_40w?pwd=rn3v">百度云链接</a><br>
-            购买渠道：
-            <a href="https://shop260382949.taobao.com">官方淘宝店</a>
-        </p>
-    </section>
-
-    <!-- 应用场景 -->
-    <section class="section">
-        <h2>典型应用</h2>
-        <div class="product-grid">
-            <div class="card">
-                <h4>工业自动化</h4>
-                <p>存储设备配置参数和操作日志，支持-40℃极端环境运行:cite[1]</p>
-            </div>
-            <div class="card">
-                <h4>汽车电子</h4>
-                <p>通过AEC-Q100认证，适用于车载信息娱乐系统和BMS管理:cite[2]</p>
-            </div>
-            <div class="card">
-                <h4>智能家居</h4>
-                <p>低功耗设计，支持智能设备用户数据存储:cite[7]</p>
+            <!-- 其他7个产品相同结构 -->
+            <div style="padding:15px;border:1px solid #eee;border-radius:6px">
+                <h3>EV24C512A</h3>
+                <ul style="margin:10px 0;list-style:none">
+                    <li>容量：512Kb (65536x8)</li>
+                    <li>接口：I2C@1MHz</li>
+                    <li>电压：2.5-5.5V</li>
+                    <li>封装：UDFN-8</li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <!-- 合作厂商 -->
-    <section class="section" style="background:#f5f5f5">
-        <h2>产业合作</h2>
-        <div class="product-grid">
-            <div class="card">
-                <h4>晶圆制造</h4>
-                <p>华虹半导体提供先进CMOS工艺晶圆，良品率＞99.8%:cite[1]</p>
-            </div>
-            <div class="card">
-                <h4>封装测试</h4>
-                <p>通富微电完成UDFN封装及可靠性测试，通过AEC-Q100认证</p>
-            </div>
+        <div style="margin-top:20px">
+            <p>📥 <a href="https://pan.baidu.com/s/1IVMXhjZQSH4MUZM6pl_40w?pwd=rn3v" style="color:var(--tech-blue)">下载全系规格书（提取码：rn3v）</a></p>
+            <p>🛒 <a href="https://shop260382949.taobao.com" style="color:var(--tech-blue)">官方淘宝店</a></p>
         </div>
-    </section>
-
-    <!-- 核心优势 -->
-    <section class="section">
-        <h2>产品优势</h2>
-        <ul>
-            <li>全系兼容BR24G/AT24C系列，支持Pin to Pin替换:cite[1]</li>
-            <li>工业级宽温域支持（-40℃~125℃）:cite[2]</li>
-            <li>20年数据保持能力，100万次擦写寿命:cite[5]</li>
-            <li>可选AES/ChaCha20数据加密方案:cite[1]</li>
-        </ul>
-    </section>
+    </div>
 
     <!-- 联系方式 -->
-    <footer class="section" style="background:#003366; color:white">
-        <h3>全球服务网络</h3>
+    <div class="module">
+        <h2 style="color: var(--tech-dark); border-left: 4px solid var(--tech-blue); padding-left: 10px">全球服务网络</h2>
         <div class="product-grid">
-            <div class="card" style="background:#1a4d80">
-                <h4>中国总部</h4>
-                <p>深圳市南山区科技园A3栋501<br>
-                联系人：Eric Zeng<br>
-                ✉️ eric.zeng@evash.top<br>
-                📱 +86 185 7668 9961<br>
+            <div style="background:#f4f6f8;padding:15px;border-radius:6px">
+                <h4>深圳总部</h4>
+                <p>📍 南山区科技园A3栋501<br>
+                📞 0086 18576689961<br>
+                📧 eric.zeng@evash.com<br>
                 💬 微信 EHS981</p>
             </div>
-            <div class="card" style="background:#1a4d80">
+            <div style="background:#f4f6f8;padding:15px;border-radius:6px">
                 <h4>美国办事处</h4>
-                <p>23 Davis St, Woburn, MA 01801<br>
-                联系人：张成<br>
+                <p>📍 23 Davis St, Woburn, MA 01801<br>
+                📞 +1 781-933-8800<br>
                 💬 微信 EHS985</p>
             </div>
-            <div class="card" style="background:#1a4d80">
+            <div style="background:#f4f6f8;padding:15px;border-radius:6px">
                 <h4>长沙中心</h4>
-                <p>雨花区朝辉路245上河国际B区2402<br>
-                联系人：刘经理<br>
-                📱 +86 189 3243 7954<br>
+                <p>📍 雨花区朝辉路245上河国际B区2402<br>
+                📞 +86 189 3243 7954<br>
+                📞 +86 137 3905 3710<br>
                 💬 微信 EHS986</p>
             </div>
         </div>
-    </footer>
+    </div>
 </body>
 </html>
-
