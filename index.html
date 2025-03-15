@@ -48,80 +48,130 @@
         </div>
     </header>
 
-    <!-- 品牌介绍 -->
-    <div class="module">
-        <h1 style="color: var(--dark); margin-bottom: 15px">EVASH EEPROM</h1>
-        <p>益华世科技（深圳）有限公司旗下存储芯片品牌，专注工业级EEPROM研发生产，通过AEC-Q100认证，工作温度-40℃~125℃。</p>
-    </div>
+    <!-- 公司介绍 -->
+    <section class="section">
+        <h2>品牌介绍</h2>
+        <p>EVASH EEPROM是益华世科技（深圳）有限公司旗下专业存储芯片品牌，致力于提供工业级/消费级EEPROM解决方案。产品覆盖2Kb-512Kb容量，采用先进UDFN封装工艺，具备100万次擦写寿命和20年数据保持能力:cite[1]:cite[2]。</p>
+    </section>
 
-    <!-- 产品列表 -->
-    <div class="module">
-        <h2 style="color: var(--dark); border-left: 4px solid var(--blue); padding-left:10px">产品系列</h2>
+
+    <!-- 产品矩阵 -->
+    <section class="section" style="background:#f5f5f5">
+        <h2>产品系列</h2>
         <div class="product-grid">
-            <!-- 全系9个产品 -->
-            <div style="padding:15px;border:1px solid #eee;border-radius:6px">
+            <div class="card">
                 <h3>EV24C02A</h3>
-                <ul style="margin:10px 0;list-style:none">
-                    <li>容量：2Kb (256x8)</li>
-                    <li>接口：I2C</li>
-                    <li>电压：1.8-5.5V</li>
-                </ul>
+                <p>容量：2Kb<br>接口：I2C<br>电压：1.7-5.5V</p>
             </div>
-            <div style="padding:15px;border:1px solid #eee;border-radius:6px">
+            <div class="card">
                 <h3>EV24C04A</h3>
-                <ul style="margin:10px 0;list-style:none">
-                    <li>容量：4Kb (512x8)</li>
-                    <li>温度：-40~125℃</li>
-                    <li>封装：SOP-8</li>
-                </ul>
+                <p>容量：4Kb<br>封装：UDFN-8<br>温度：-40~125℃</p>
             </div>
-            <div style="padding:15px;border:1px solid #eee;border-radius:6px">
+            <div class="card">
                 <h3>EV24C08A</h3>
-                <ul style="margin:10px 0;list-style:none">
-                    <li>容量：8Kb (1024x8)</li>
-                    <li>寿命：100万次</li>
-                    <li>封装：TSSOP-8</li>
-                </ul>
+                <p>容量：8Kb<br>封装：UDFN-8<br>温度：-40~125℃</p>
             </div>
-            <!-- 其余产品结构相同 -->
-            <div style="padding:15px;border:1px solid #eee;border-radius:6px">
+            <div class="card">
+                <h3>EV24C16A</h3>
+                <p>容量：16Kb<br>封装：UDFN-8<br>温度：-40~125℃</p>
+            </div>
+            <div class="card">
+                <h3>EV24C32A</h3>
+                <p>容量：32Kb<br>封装：UDFN-8<br>温度：-40~125℃</p>
+            </div>
+            <div class="card">
+                <h3>EV24C64A</h3>
+                <p>容量：64Kb<br>封装：UDFN-8<br>温度：-40~125℃</p>
+            </div>
+            <div class="card">
+                <h3>EV24C64A</h3>
+                <p>容量：128Kb<br>封装：UDFN-8<br>温度：-40~125℃</p>
+            </div>
+            <div class="card">
                 <h3>EV24C512A</h3>
-                <ul style="margin:10px 0;list-style:none">
-                    <li>容量：512Kb (65536x8)</li>
-                    <li>接口：I2C@1MHz</li>
-                    <li>电压：2.5-5.5V</li>
-                </ul>
+                <p>容量：512Kb<br>封装：UDFN-8<br>温度：-40~125℃</p>
+            </div>
+            <!-- 重复结构添加EV24C08A/16A/32A/64A/128A/256A/512A -->
+        </div>
+        <p style="margin-top:1rem">
+            规格书下载：
+            <a href="https://pan.baidu.com/s/1IVMXhjZQSH4MUZM6pl_40w?pwd=rn3v">百度云链接</a><br>
+            购买渠道：
+            <a href="https://shop260382949.taobao.com/?spm=pc_detail.29232929/evo365560b447259.shop_block.dentershop.7eb47dd659UOm8">官方淘宝店</a>
+        </p>
+    </section>
+
+    <!-- 应用场景 -->
+    <section class="section">
+        <h2>典型应用</h2>
+        <div class="product-grid">
+            <div class="card">
+                <h4>工业自动化</h4>
+                <p>存储设备配置参数和操作日志，支持-40℃极端环境运行:cite[1]</p>
+            </div>
+            <div class="card">
+                <h4>汽车电子</h4>
+                <p>通过AEC-Q100认证，适用于车载信息娱乐系统和BMS管理:cite[2]</p>
+            </div>
+            <div class="card">
+                <h4>智能家居</h4>
+                <p>低功耗设计，支持智能设备用户数据存储:cite[7]</p>
             </div>
         </div>
-        <div style="margin-top:20px">
-            <p>📥 <a href="https://pan.baidu.com/s/1IVMXhjZQSH4MUZM6pl_40w?pwd=rn3v" style="color:var(--blue)">规格书下载</a></p>
-            <p>🛒 <a href="https://shop260382949.taobao.com" style="color:var(--blue)">淘宝购买</a></p>
-        </div>
-    </div>
+    </section>
 
-    <!-- 联系方式 -->
-    <div class="module">
-        <h2 style="color: var(--dark); border-left:4px solid var(--blue); padding-left:10px">联系我们</h2>
+    <!-- 合作厂商 -->
+    <section class="section" style="background:#f5f5f5">
+        <h2>产业合作</h2>
         <div class="product-grid">
-            <div style="background:#f4f6f8;padding:15px;border-radius:6px">
-                <h4>深圳总部</h4>
-                <p>📍 南山区科技园A3栋501<br>
-                📞 0086 18576689961<br>
+            <div class="card">
+                <h4>晶圆制造</h4>
+                <p>华虹半导体提供先进CMOS工艺晶圆，良品率＞99.8%:cite[1]</p>
+            </div>
+            <div class="card">
+                <h4>封装测试</h4>
+                <p>通富微电完成UDFN封装及可靠性测试，通过AEC-Q100认证</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心优势 -->
+    <section class="section">
+        <h2>产品优势</h2>
+        <ul>
+            <li>全系兼容BR24G/AT24C系列，支持Pin to Pin替换</li>
+            <li>工业级宽温域支持（-40℃~125℃）</li>
+            <li>20年数据保持能力，100万次擦写寿命</li>
+            <li>可选AES/ChaCha20数据加密方案</li>
+        </ul>
+    </section>
+    
+    <!-- 联系方式 -->
+    <footer class="section" style="background:#003366; color:white">
+        <h3>全球服务网络</h3>
+        <div class="product-grid">
+            <div class="card" style="background:#1a4d80">
+                <h4>中国总部</h4>
+                <p>深圳市南山区科技园A3栋501<br>
+                联系人：Eric Zeng<br>
+                ✉️ eric.zeng@evash.top<br>
+                📱 +86 185 7668 9961<br>
                 💬 微信 EHS981</p>
             </div>
-            <div style="background:#f4f6f8;padding:15px;border-radius:6px">
+            <div class="card" style="background:#1a4d80">
                 <h4>美国办事处</h4>
-                <p>📍 23 Davis St, Woburn, MA<br>
-                📞 +1 781-933-8800<br>
+                <p>23 Davis St, Woburn, MA 01801<br>
+                联系人：张成<br>
                 💬 微信 EHS985</p>
             </div>
-            <div style="background:#f4f6f8;padding:15px;border-radius:6px">
+            <div class="card" style="background:#1a4d80">
                 <h4>长沙中心</h4>
-                <p>📍 雨花区朝辉路245<br>
-                📞 +86 189 3243 7954<br>
+                <p>雨花区朝辉路245上河国际B区2402<br>
+                联系人：刘经理<br>
+                📱 +86 189 3243 7954<br>
                 💬 微信 EHS986</p>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
