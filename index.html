@@ -1,198 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVASH EEPROM - EVASH Technology Storage Solutions</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Microsoft YaHei', sans-serif; line-height: 1.8; }
-        .header { background: #003366; padding: 1rem; color: white; }
-        .section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 1.5rem; }
-        .card { border: 1px solid #eee; padding: 1.5rem; border-radius: 8px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVASH EEPROM - EVASH Technology Storage Solutions</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #333; background-color: #fff; line-height: 1.6; }
+    a { color: #0056b3; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #002a5c, #004b99);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    nav a {
+      color: white;
+      font-weight: 500;
+    }
+
+    /* Section */
+    .section {
+      padding: 3rem 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 1.8rem;
+      color: #003366;
+      border-left: 5px solid #003366;
+      padding-left: 0.6rem;
+      margin-bottom: 1.2rem;
+    }
+    .section p { margin-bottom: 1rem; }
+
+    /* Grid layout */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      background: white;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+    .card h3, .card h4 {
+      color: #003366;
+      margin-bottom: 0.6rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #002a5c;
+      color: white;
+      padding: 3rem 1.5rem;
+    }
+    footer h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    footer .card {
+      background: #004b99;
+      border: none;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav { justify-content: center; }
+    }
+  </style>
 </head>
+
 <body>
-    <header class="header">
-      <!-- <img src="evash-logo.png" alt="EVASH LOGO" style="height:100px"> -->
-      <h1 style="display:inline-block; margin-left:1rem">EVASH EEPROM</h1>
-    </header> 
-    
-    <!-- Company Introduction -->
-    <section class="section">
-        <h2>Brand Introduction</h2>
-        <p>EVASH EEPROM is a professional memory chip brand under METASTONE INC (USA) and EVASH Technology (Shenzhen) Co., Ltd., dedicated to providing industrial-grade and consumer-grade EEPROM solutions. The product range covers 2Kb–512Kb capacities, utilizing advanced UDFN packaging technology, featuring 1,000,000 write cycles and 20-year data retention.</p>
-        <p style="margin-top:1rem">
-            EVASH
-            <a href="https://ehs985.github.io/evash-website/">USA Website</a><br>
-        </p>
-    </section>
+  <header>
+    <h1>EVASH EEPROM</h1>
+    <nav>
+      <a href="#brand">About</a>
+      <a href="#products">Products</a>
+      <a href="#applications">Applications</a>
+      <a href="#partners">Partners</a>
+      <a href="#advantages">Advantages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Product Matrix -->
-    <section class="section" style="background:#f5f5f5">
-        <h2>Product Series</h2>
-        <div class="product-grid">
-            <div class="card">
-                <h3>EV24C02A</h3>
-                <p>Capacity: 2Kb<br>Interface: I2C<br>Voltage: 1.7–5.5V</p>
-                <p style="margin-top:1rem">
-                Datasheet:
-                <a href="https://u.pcloud.link/publink/show?code=XZp4Nn5Zs1H3ljWGWDk8n1i5aFl9k4KA0m1y">Download</a><br>
-                </p>
-            </div>
-            <div class="card">
-                <h3>EV24C04A</h3>
-                <p>Capacity: 4Kb<br>Package: UDFN-8<br>Temperature: -40~125℃</p>
-                <p style="margin-top:1rem">
-                Datasheet:
-                <a href="https://u.pcloud.link/publink/show?code=XZp4Nn5Zs1H3ljWGWDk8n1i5aFl9k4KA0m1y">Download</a><br>
-                </p>
-            </div>
-            <div class="card">
-                <h3>EV24C08A</h3>
-                <p>Capacity: 8Kb<br>Package: UDFN-8<br>Temperature: -40~125℃</p>
-                <p style="margin-top:1rem">
-                Datasheet:
-                <a href="https://u.pcloud.link/publink/show?code=XZp4Nn5Zs1H3ljWGWDk8n1i5aFl9k4KA0m1y">Download</a><br>
-                </p>
-            </div>
-            <div class="card">
-                <h3>EV24C16A</h3>
-                <p>Capacity: 16Kb<br>Package: UDFN-8<br>Temperature: -40~125℃</p>
-                <p style="margin-top:1rem">
-                Datasheet:
-                <a href="https://u.pcloud.link/publink/show?code=XZp4Nn5Zs1H3ljWGWDk8n1i5aFl9k4KA0m1y">Download</a><br>
-                </p>
-            </div>
-            <div class="card">
-                <h3>EV24C32A</h3>
-                <p>Capacity: 32Kb<br>Package: UDFN-8<br>Temperature: -40~125℃</p>
-                <p style="margin-top:1rem">
-                Datasheet:
-                <a href="https://u.pcloud.link/publink/show?code=XZP8Nn5ZFQ0GkUKUv6XExTTtuiB3K54cAv7y">Download</a><br>
-                </p>
-            </div>
-            <div class="card">
-                <h3>EV24C64A</h3>
-                <p>Capacity: 64Kb<br>Package: UDFN-8<br>Temperature: -40~125℃</p>
-                <p style="margin-top:1rem">
-                Datasheet:
-                <a href="https://u.pcloud.link/publink/show?code=XZA8Nn5ZyIw9VEir4IXKTk63zYitOkXSbgwk">Download</a><br>
-                </p>
-            </div>
-            <div class="card">
-                <h3>EV24C128A</h3>
-                <p>Capacity: 128Kb<br>Package: UDFN-8<br>Temperature: -40~125℃</p>
-                <p style="margin-top:1rem">
-                Datasheet:
-                <a href="https://u.pcloud.link/publink/show?code=XZv8Nn5ZMkggepcDQVSMVSmrfTAKzQSc8qoX">Download</a><br>
-                </p>
-            </div>
-            <div class="card">
-                <h3>EV24C256A</h3>
-                <p>Capacity: 256Kb<br>Package: UDFN-8<br>Temperature: -40~125℃</p>
-                <p style="margin-top:1rem">
-                Datasheet:
-                <a href="https://u.pcloud.link/publink/show?code=XZo8Nn5ZjfV3Igu4yL0y3uW8YKBfbzbPq5BV">Download</a><br>
-                </p>
-            </div>
-            <div class="card">
-                <h3>EV24C512A</h3>
-                <p>Capacity: 512Kb<br>Package: UDFN-8<br>Temperature: -40~125℃</p>
-                <p style="margin-top:1rem">
-                Datasheet:
-                <a href="https://u.pcloud.link/publink/show?code=XZLQNn5ZXea3m1D3P6fkjQDSmXoAjHrHx6eV">Download</a><br>
-                </p>
-            </div>
-        </div>
-        <p style="margin-top:1rem">
-            EVASH Ultra EEPROM 
-            <a href=""></a><br>
-            Selection Guide:
-            <a href="https://u.pcloud.link/publink/show?code=XZyfNn5Z9nYWa3pjF4fu48s6o3vk0XRRaCTk">Download</a><br>
-            Technical Datasheet:
-            <a href="https://pan.baidu.com/s/1IVMXhjZQSH4MUZM6pl_40w?pwd=rn3v">Download</a><br>
-            Development Board:
-            <a href="https://u.pcloud.link/publink/show?code=XZ8sNn5ZlVeG68w6TeJhBtUsViRPwpx1mpkk">Manual</a><br>
-            AES Encryption Algorithm:
-            <a href="https://u.pcloud.link/publink/show?code=XZPsNn5ZQhgEOD6BYw5u0cACsBO3RjORK6V0">Download</a><br>
-            Sample Purchase Channel:
-            <a href="https://shop260382949.taobao.com/?spm=pc_detail.29232929/evo365560b447259.shop_block.dentershop.7eb47dd659UOm8">Official Store</a>
-        </p>
-    </section>
+  <!-- Brand Introduction -->
+  <section class="section" id="brand">
+    <h2>Brand Introduction</h2>
+    <p>EVASH EEPROM is a professional memory chip brand under METASTONE INC (USA) and EVASH Technology (Shenzhen) Co., Ltd., dedicated to providing industrial-grade and consumer-grade EEPROM solutions. The product range covers 2Kb–512Kb capacities, using advanced UDFN packaging with up to 1,000,000 write cycles and 20-year data retention.</p>
+    <p>Visit our US site: <a href="https://ehs985.github.io/evash-website/">https://ehs985.github.io/evash-website/</a></p>
+  </section>
 
-    <!-- Application Scenarios -->
-    <section class="section">
-        <h2>Typical Applications</h2>
-        <div class="product-grid">
-            <div class="card">
-                <h4>Industrial Automation</h4>
-                <p>Used for storing configuration parameters and operation logs, supports operation in extreme -40℃ environments.</p>
-            </div>
-            <div class="card">
-                <h4>Automotive Electronics</h4>
-                <p>AEC-Q100 qualified, suitable for in-vehicle infotainment systems and BMS management.</p>
-            </div>
-            <div class="card">
-                <h4>Smart Home</h4>
-                <p>Low-power design, supports user data storage for smart home devices.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Product Series -->
+  <section class="section" style="background:#f5f5f5" id="products">
+    <h2>Product Series</h2>
+    <div class="product-grid">
+      <div class="card"><h3>EV24C02A</h3><p>Capacity: 2Kb<br>Interface: I2C<br>Voltage: 1.7–5.5V</p><a href="https://u.pcloud.link/publink/show?code=XZp4Nn5Zs1H3ljWGWDk8n1i5aFl9k4KA0m1y">Download Datasheet</a></div>
+      <div class="card"><h3>EV24C04A</h3><p>Capacity: 4Kb<br>Package: UDFN-8<br>Temp: -40~125℃</p><a href="https://u.pcloud.link/publink/show?code=XZp4Nn5Zs1H3ljWGWDk8n1i5aFl9k4KA0m1y">Download Datasheet</a></div>
+      <div class="card"><h3>EV24C08A</h3><p>Capacity: 8Kb<br>Package: UDFN-8<br>Temp: -40~125℃</p><a href="https://u.pcloud.link/publink/show?code=XZp4Nn5Zs1H3ljWGWDk8n1i5aFl9k4KA0m1y">Download Datasheet</a></div>
+      <div class="card"><h3>EV24C16A</h3><p>Capacity: 16Kb<br>Package: UDFN-8<br>Temp: -40~125℃</p><a href="https://u.pcloud.link/publink/show?code=XZp4Nn5Zs1H3ljWGWDk8n1i5aFl9k4KA0m1y">Download Datasheet</a></div>
+      <div class="card"><h3>EV24C32A</h3><p>Capacity: 32Kb<br>Package: UDFN-8<br>Temp: -40~125℃</p><a href="https://u.pcloud.link/publink/show?code=XZP8Nn5ZFQ0GkUKUv6XExTTtuiB3K54cAv7y">Download Datasheet</a></div>
+      <div class="card"><h3>EV24C64A</h3><p>Capacity: 64Kb<br>Package: UDFN-8<br>Temp: -40~125℃</p><a href="https://u.pcloud.link/publink/show?code=XZA8Nn5ZyIw9VEir4IXKTk63zYitOkXSbgwk">Download Datasheet</a></div>
+      <div class="card"><h3>EV24C128A</h3><p>Capacity: 128Kb<br>Package: UDFN-8<br>Temp: -40~125℃</p><a href="https://u.pcloud.link/publink/show?code=XZv8Nn5ZMkggepcDQVSMVSmrfTAKzQSc8qoX">Download Datasheet</a></div>
+      <div class="card"><h3>EV24C256A</h3><p>Capacity: 256Kb<br>Package: UDFN-8<br>Temp: -40~125℃</p><a href="https://u.pcloud.link/publink/show?code=XZo8Nn5ZjfV3Igu4yL0y3uW8YKBfbzbPq5BV">Download Datasheet</a></div>
+      <div class="card"><h3>EV24C512A</h3><p>Capacity: 512Kb<br>Package: UDFN-8<br>Temp: -40~125℃</p><a href="https://u.pcloud.link/publink/show?code=XZLQNn5ZXea3m1D3P6fkjQDSmXoAjHrHx6eV">Download Datasheet</a></div>
+    </div>
 
-    <!-- Industry Partners -->
-    <section class="section" style="background:#f5f5f5">
-        <h2>Industry Partners</h2>
-        <div class="product-grid">
-            <div class="card">
-                <h4>Wafer Fabrication</h4>
-                <p>Huahong Semiconductor provides advanced CMOS process wafers with a yield rate >99.8%.</p>
-            </div>
-            <div class="card">
-                <h4>Packaging & Testing</h4>
-                <p>Tongfu Microelectronics performs UDFN packaging and reliability testing, certified to AEC-Q100 standards.</p>
-            </div>
-        </div>
-    </section>
+    <p style="margin-top:1.5rem;">
+      <strong>Resources:</strong><br>
+      Selection Guide: <a href="https://u.pcloud.link/publink/show?code=XZyfNn5Z9nYWa3pjF4fu48s6o3vk0XRRaCTk">Download</a><br>
+      Technical Datasheet: <a href="https://pan.baidu.com/s/1IVMXhjZQSH4MUZM6pl_40w?pwd=rn3v">Download</a><br>
+      Development Board Manual: <a href="https://u.pcloud.link/publink/show?code=XZ8sNn5ZlVeG68w6TeJhBtUsViRPwpx1mpkk">View</a><br>
+      AES Encryption Algorithm: <a href="https://u.pcloud.link/publink/show?code=XZPsNn5ZQhgEOD6BYw5u0cACsBO3RjORK6V0">Download</a><br>
+      Sample Purchase: <a href="https://shop260382949.taobao.com/">Official Store</a>
+    </p>
+  </section>
 
-    <!-- Product Advantages -->
-    <section class="section">
-        <h2>Product Advantages</h2>
-        <ul>
-            <li>Fully compatible with BR24G/AT24C/M24 series, supports Pin-to-Pin replacement</li>
-            <li>Industrial-grade wide temperature range (-40℃~125℃)</li>
-            <li>100-year data retention, 2 million write cycles</li>
-            <li>Optional AES/ChaCha20 data encryption schemes</li>
-        </ul>
-    </section>
-    
-    <!-- Contact Information -->
-    <footer class="section" style="background:#003366; color:white">
-        <h3>Global Service Network</h3>
-        <div class="product-grid">
-            <div class="card" style="background:#1a4d80">
-                <h4>China Headquarters</h4>
-                <p>Room 309, Tsinghua Information Port, Nanshan District, Shenzhen<br>
-                Contact: Eric Zeng<br>
-                ✉️ eric.zeng@evash.top<br>
-                📱 +86 185 7668 9961<br>
-                💬 WeChat: EHS981</p>
-            </div>
-            <div class="card" style="background:#1a4d80">
-                <h4>USA Office</h4>
-                <p>23 Davis St, Woburn, MA 01801<br>
-                Contact: Mr. Zhang<br>
-                💬 WeChat: EHS986</p>
-            </div>
-            <div class="card" style="background:#1a4d80">
-                <h4>Changsha Center</h4>
-                <p>Room 2402, Block B, Shanghe International, Yuhua District<br>
-                Contact: Mr. Liu<br>
-                📱 +86 189 3243 7954<br>
-                💬 WeChat: EHS987</p>
-            </div>
-        </div>
-    </footer>
+  <!-- Applications -->
+  <section class="section" id="applications">
+    <h2>Typical Applications</h2>
+    <div class="product-grid">
+      <div class="card"><h4>Industrial Automation</h4><p>Stores configuration parameters and operation logs, reliable under -40℃ environments.</p></div>
+      <div class="card"><h4>Automotive Electronics</h4><p>AEC-Q100 certified, suitable for infotainment and BMS systems.</p></div>
+      <div class="card"><h4>Smart Home</h4><p>Low-power design ideal for user data storage in smart devices.</p></div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section class="section" style="background:#f5f5f5" id="partners">
+    <h2>Industry Partners</h2>
+    <div class="product-grid">
+      <div class="card"><h4>Wafer Fabrication</h4><p>Huahong Semiconductor provides advanced CMOS wafers with >99.8% yield.</p></div>
+      <div class="card"><h4>Packaging & Testing</h4><p>Tongfu Microelectronics handles UDFN packaging and AEC-Q100 reliability testing.</p></div>
+    </div>
+  </section>
+
+  <!-- Advantages -->
+  <section class="section" id="advantages">
+    <h2>Product Advantages</h2>
+    <ul>
+      <li>Fully compatible with BR24G/AT24C/M24 series (Pin-to-Pin replacement)</li>
+      <li>Industrial-grade wide temperature range (-40℃ to 125℃)</li>
+      <li>100-year data retention, 2 million write cycles</li>
+      <li>Optional AES / ChaCha20 encryption support</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <h3>Global Service Network</h3>
+    <div class="product-grid">
+      <div class="card">
+        <h4>China Headquarters</h4>
+        <p>Room 309, Tsinghua Info Port, Nanshan District, Shenzhen<br>
+        Contact: Eric Zeng<br>
+        ✉️ eric.zeng@evash.top<br>
+        📱 +86 185 7668 9961<br>
+        💬 WeChat: EHS981</p>
+      </div>
+      <div class="card">
+        <h4>USA Office</h4>
+        <p>23 Davis St, Woburn, MA 01801<br>
+        Contact: Mr. Zhang<br>
+        💬 WeChat: EHS986</p>
+      </div>
+      <div class="card">
+        <h4>Changsha Center</h4>
+        <p>Room 2402, Block B, Shanghe International, Yuhua District<br>
+        Contact: Mr. Liu<br>
+        📱 +86 189 3243 7954<br>
+        💬 WeChat: EHS987</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
